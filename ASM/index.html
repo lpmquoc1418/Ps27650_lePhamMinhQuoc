@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/c1.css">
+</head>
+<body>
+    <header id="header">  <img src="images/Tocotoco.jpg" alt="" style="
+        height: 175px;
+        width: 1015px;
+    "></header>
+    <nav id="menu"> 
+        <a href="#top">Trang chủ</a>
+        <a href="#listLoaiTra"> ToCoToCo Menu</a>
+        <a href="#listTinTuc"> Tin Tức</a>
+        <a href="#listcoso"> Cơ sở</a>
+    </nav>
+    <main> 
+        <section id="listLoaiTra">
+            <h2>SẢN PHẨM NỔI BẬT </h2>
+            <div id="data"></div>
+        </section>
+        <section id="listTinTuc">
+            <h2 style="color: chocolate;"> Tin Tức và Khuyến Mãi </h2>
+            <h2> KHÁM PHÁ TOCOTOCO NHẬN NGAY KHUYẾN MÃI </h2>
+            <div id="data"></div>
+        </section>
+        <section id="listcoso">
+            <h2> Danh sách cơ sở</h2>
+            <div id="data"></div>
+        </section>
+        <section id="listthuonghieu">
+            <h2> Các thương hiệu</h2>
+            <div id="data"></div>
+        </section>
+    </main>
+    <footer> Họ tên sinh viên: Lê Phạm Minh Quốc @2024</footer>
+</body>
+</html>
+<script type="module">
+   import { showlistLoaiTra, showlistTinTuc, showlistcoso , showlistthuonghieu} from './js/app.js';
+   document.querySelector("#listLoaiTra #data").innerHTML = showlistLoaiTra();
+   document.querySelector("#listTinTuc #data").innerHTML = showlistTinTuc();
+   document.querySelector("#listcoso #data").innerHTML = showlistcoso();
+   document.querySelector("#listthuonghieu #data").innerHTML = await showlistthuonghieu();
+
+</script>
